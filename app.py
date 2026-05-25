@@ -19,6 +19,7 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero")
     return a / b
 
+
 def calculate(operation, num1, num2):
     """Perform calculation based on operation"""
     if operation == 'add':
@@ -34,16 +35,17 @@ def calculate(operation, num1, num2):
 
     return result
 
+
 if __name__ == "__main__":
     print("Simple Calculator")
     print("-" * 20)
-    
+
     result1 = calculate('add', 10, 5)
     print(f"10 + 5 = {result1}")
-    
+
     result2 = calculate('multiply', 7, 3)
     print(f"7 * 3 = {result2}")
-    
+
     unused_variable = "This variable is never used"
-    
+
     print("Calculator completed successfully!")
